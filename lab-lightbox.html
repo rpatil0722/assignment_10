@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>jQuery Plugin Lightbox</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link href="css/lightbox.css" rel="stylesheet">
+		<link href="css/screen.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script>
+			$(function() {
+				$(".bxslider").bxSlider({
+				  minSlides: 3,
+				  maxSlides: 3,
+				  slideWidth: 75,
+				  slideMargin: 10
+				});
+			})
+		</script>
+	</head>
+	
+
+	<body style="margin:50px";>
+		<ul class="bxslider">
+			<li><a href="images/building_01.jpg" data-lightbox="building" data-title="Front of building"><img src="images/building_01.jpg" alt="" width="75" height="75"></a></li>
+			<li><a href="images/building_02.jpg" data-lightbox="building" data-title="Back of building"><img src="images/building_02.jpg" alt="" width="75" height="75"></a></li>
+			<li><a href="images/building_03.jpg" data-lightbox="building" data-title="Side of building"><img src="images/building_03.jpg" alt="" width="75" height="75"></a></li>
+			<li><a href="images/building_04.jpg" data-lightbox="insidebuilding" data-title="Conference room"><img src="images/building_04.jpg" alt="" width="75" height="75"></a></li>
+			<li><a href="images/building_05.jpg" data-lightbox="insidebuilding" data-title="Cafeteria"><img src="images/building_05.jpg" alt="" width="75" height="75"></a></li>
+		</ul>
+	</body>
+</html>
